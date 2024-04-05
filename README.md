@@ -1,6 +1,6 @@
 # Olá, sou Samuel G.Dourado
 
-<p>Olá, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 19 anos e estudante de T.I. Minhas habilidades abrangem programação em PHP, Java, C++, JavaScript, e desenvolvimento front-end com HTML/CSS, Bootstrap e WordPress. Além disso, sou experiente em bancos de dados SQL e MySQL, bem como na administração de servidores Apache.</p>
+<p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 19 anos e estudante de T.I. Minhas habilidades abrangem programação em PHP, Java, C++, JavaScript, e desenvolvimento front-end com HTML/CSS, Bootstrap e WordPress. Além disso, sou experiente em bancos de dados SQL e MySQL, bem como na administração de servidores Apache.</p>
 
 <p>Estou determinado a me destacar como um desenvolvedor júnior e estou empenhado em expandir ainda mais meu conhecimento. Estou buscando novos desafios, aprendendo novos frameworks e integrando APIs e bancos de dados em meus projetos para me tornar um profissional de tecnologia completo. Venha conferir meu repositório para ver meu trabalho e juntos podemos impulsionar o mundo da tecnologia!</p>
 
