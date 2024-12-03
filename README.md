@@ -1,13 +1,13 @@
 # Olá, sou Samuel G.Dourado
 
-<p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 19 anos e estudante de T.I. Minhas habilidades abrangem programação em PHP, Java, C++, JavaScript, e desenvolvimento front-end com HTML/CSS, Bootstrap e WordPress. Além disso, sou experiente em bancos de dados SQL e MySQL, bem como na administração de servidores Apache.</p>
+<p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 20 anos e estudante de T.I. Minhas habilidades abrangem programação em PHP, Java, C++, JavaScript, e desenvolvimento front-end com HTML/CSS, Bootstrap e WordPress. Além disso, sou experiente em bancos de dados SQL e MySQL, bem como na administração de servidores Apache.</p>
 
 <p>Estou determinado a me destacar como um desenvolvedor júnior e estou empenhado em expandir ainda mais meu conhecimento. Estou buscando novos desafios, aprendendo novos frameworks e integrando APIs e bancos de dados em meus projetos para me tornar um profissional de tecnologia completo. Venha conferir meu repositório para ver meu trabalho e juntos podemos impulsionar o mundo da tecnologia!</p>
 
 ---
 # US
 
-<p>Hello, I'm Samuel Gomes Dourado, a 19-year-old technology enthusiast and IT student. My skills encompass programming in PHP, Java, C++, JavaScript, and front-end development with HTML/CSS, Bootstrap, and WordPress. Additionally, I have experience with SQL and MySQL databases, as well as Apache server administration.</p>
+<p>Hello, I'm Samuel Gomes Dourado, a 20-year-old technology enthusiast and IT student. My skills encompass programming in PHP, Java, C++, JavaScript, and front-end development with HTML/CSS, Bootstrap, and WordPress. Additionally, I have experience with SQL and MySQL databases, as well as Apache server administration.</p>
 
 <p>I'm determined to stand out as a junior developer and committed to further expanding my knowledge. I'm seeking new challenges, learning new frameworks, and integrating APIs and databases into my projects to become a well-rounded technology professional. Come check out my repository to see my work, and together, we can drive the world of technology forward!</p>
 
