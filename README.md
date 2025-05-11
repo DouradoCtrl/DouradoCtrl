@@ -1,15 +1,28 @@
-# Olá, sou Samuel G.Dourado
+# Olá, sou Samuel Gomes Dourado
 
-<p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 20 anos e estudante de T.I. Minhas habilidades abrangem programação em PHP, Java, C++, JavaScript, e desenvolvimento front-end com HTML/CSS, Bootstrap e WordPress. Além disso, sou experiente em bancos de dados SQL e MySQL, bem como na administração de servidores Apache.</p>
+<p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 20 anos e estudante de T.I.</p>
 
-<p>Estou determinado a me destacar como um desenvolvedor júnior e estou empenhado em expandir ainda mais meu conhecimento. Estou buscando novos desafios, aprendendo novos frameworks e integrando APIs e bancos de dados em meus projetos para me tornar um profissional de tecnologia completo. Venha conferir meu repositório para ver meu trabalho e juntos podemos impulsionar o mundo da tecnologia!</p>
+<p>Tenho experiência em desenvolvimento back-end com PHP, utilizando frameworks como Laravel para construir aplicações robustas e escaláveis. Minhas habilidades englobam engenharia de software com foco em soluções, modelagem de banco de dados para garantir desempenho e consistência, testes automatizados para assegurar a qualidade do código, além da integração eficiente de tecnologias, como tarefas agendadas com Cron Tab e rotinas otimizadas no Laravel.</p>
+
+<p>Domino programação orientada a objetos, construção de middlewares e boas práticas de desenvolvimento, garantindo código limpo, eficiente e organizado. No front-end, trabalho com Blade, Tailwind CSS, Bootstrap e Alpine.js, criando interfaces modernas, responsivas e intuitivas.</p>
+
+<p>Minha experiência também abrange bancos de dados MySQL, administração de servidores Apache, sistemas operacionais baseados em Ubuntu e Docker para gerenciamento de ambientes de desenvolvimento. Além disso, atuo com máquinas virtuais (VMs) em servidores, incluindo configuração e manutenção, garantindo infraestrutura confiável e eficiente.</p>
+
+<p>Estou sempre em busca de novos desafios e de aprimorar minhas habilidades, integrando APIs e explorando novas tecnologias. Se você procura um desenvolvedor com atenção aos detalhes e comprometido com a excelência técnica, confira meu repositório e vamos transformar ideias em soluções inovadoras juntos!</p>
 
 ---
+
 # US
 
-<p>Hello, I'm Samuel Gomes Dourado, a 20-year-old technology enthusiast and IT student. My skills encompass programming in PHP, Java, C++, JavaScript, and front-end development with HTML/CSS, Bootstrap, and WordPress. Additionally, I have experience with SQL and MySQL databases, as well as Apache server administration.</p>
+<p>Hello, I'm Samuel Gomes Dourado, a 20-year-old technology enthusiast and IT student.</p>
 
-<p>I'm determined to stand out as a junior developer and committed to further expanding my knowledge. I'm seeking new challenges, learning new frameworks, and integrating APIs and databases into my projects to become a well-rounded technology professional. Come check out my repository to see my work, and together, we can drive the world of technology forward!</p>
+<p>I have experience in back-end development with PHP, using frameworks like Laravel to build robust and scalable applications. My skills encompass software engineering focused on solutions, database modeling to ensure performance and consistency, automated testing to guarantee code quality, and efficient technology integration, such as task scheduling with Cron Tab and optimized Laravel routines.</p>
+
+<p>I excel in object-oriented programming, middleware construction, and development best practices, ensuring clean, efficient, and well-organized code. On the front end, I work with Blade, Tailwind CSS, Bootstrap, and Alpine.js, creating modern, responsive, and intuitive interfaces.</p>
+
+<p>My expertise also includes MySQL databases, Apache server administration, Ubuntu-based systems, and Docker for managing development environments. Additionally, I work with virtual machines (VMs) on servers, handling configuration and maintenance, ensuring reliable and efficient infrastructure.</p>
+
+<p>I am always looking for new challenges and to improve my skills by integrating APIs and exploring new technologies. If you are looking for a developer with attention to detail and commitment to technical excellence, check out my repository, and let's turn ideas into innovative solutions together!</p>
 
 <div style="display: inline-block;"><br>
   <a href=""><img align="center" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
@@ -49,6 +62,6 @@
   <a href=""><img align="center" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"></a>
   <a href=""><img align="center" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"></a>
   <a href=""><img align="center" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"></a>
-  <a href=""><img align="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></a>
+  <a href=""><img align="center" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></a>
   <a href=""><img align="center" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"></a>
 </div>
