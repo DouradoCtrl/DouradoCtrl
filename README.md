@@ -1,4 +1,4 @@
-# Olá, sou Samuel Gomes Dourado
+# Samuel Gomes Dourado
 
 <p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 20 anos e estudante de T.I.</p>
 
