@@ -65,8 +65,8 @@ def graph_commits(start_date, end_date):
     import datetime
     
     # Handle dates using standard library tools
-    start_dt = datetime.datetime.strptime(start_date.replace('Z', ''), "%Y-%m-%dT%H:%M:%S")
-    end_dt = datetime.datetime.strptime(end_date.replace('Z', '')[:19], "%Y-%m-%dT%H:%M:%S")
+    start_dt = datetime.datetime.strptime(start_date.replace('Z', '').split('.')[0], "%Y-%m-%dT%H:%M:%S")
+    end_dt = datetime.datetime.strptime(end_date.replace('Z', '').split('.')[0], "%Y-%m-%dT%H:%M:%S")
     
     total_commits = 0
     
@@ -296,17 +296,16 @@ def stars_counter(data):
     return total_stars
 
 
-def svg_overwrite(filename, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
+def svg_overwrite(filename, commit_data, commit_data_1year, star_data, repo_data, contrib_data, follower_data, loc_data):
     """
     Parse SVG files and update elements
     """
     tree = etree.parse(filename)
     root = tree.getroot()
     justify_format(root, 'commit_data', commit_data, 16)
-    justify_format(root, 'star_data', star_data, 11)
+    justify_format(root, 'commit_data_1year', commit_data_1year, 16)
     justify_format(root, 'repo_data', repo_data, 4)
     justify_format(root, 'contrib_data', contrib_data)
-    justify_format(root, 'follower_data', follower_data, 7)
     justify_format(root, 'loc_data', loc_data[2], 1)
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 1)
@@ -394,6 +393,12 @@ if __name__ == '__main__':
     # Using account creation date for start_date
     commit_data = graph_commits(acc_date, datetime.datetime.now().isoformat())
     
+    # Get commits from current year (dynamically updates every new year)
+    current_year = datetime.datetime.now().year
+    year_start = datetime.datetime(current_year, 1, 1).isoformat() + 'Z'
+    year_now = datetime.datetime.now().isoformat()
+    commit_data_1year = graph_commits(year_start, year_now)
+    
     total_loc = loc_query(['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     # The loc_query still populates the cache for Lines of Code
     
@@ -404,7 +409,7 @@ if __name__ == '__main__':
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index])
 
-    svg_overwrite('dark_mode.svg', commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
-    svg_overwrite('light_mode.svg', commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite('dark_mode.svg', commit_data, commit_data_1year, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite('light_mode.svg', commit_data, commit_data_1year, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
 
     print('Successfully fetched and generated updated SVGs.')
