@@ -1,6 +1,6 @@
-# Samuel Gomes Dourado
+# Samuel G.Dourado
 
-<p>Olá! Sou Samuel Gomes Dourado, apaixonado por tecnologia, desenvolvimento de software e soluções inovadoras. Tenho experiência sólida em back-end com PHP (Laravel, CakePHP, CodeIgniter, Symfony), modelagem de banco de dados, automação de rotinas, testes automatizados e integração de APIs. No front-end, atuo com Blade, Tailwind CSS, Bootstrap, Alpine.js, React e Vue.js, criando interfaces modernas e responsivas.</p>
+<p>Olá! Sou Samuel, apaixonado por tecnologia, desenvolvimento de software e soluções inovadoras. Tenho experiência sólida em back-end com PHP (Laravel, CakePHP, CodeIgniter, Symfony), modelagem de banco de dados, automação de rotinas, testes automatizados e integração de APIs. No front-end, atuo com Blade, Tailwind CSS, Bootstrap, Alpine.js, React e Vue.js, criando interfaces modernas e responsivas.</p>
 
 <p>Trabalho com bancos de dados MySQL, PostgreSQL e MongoDB, além de administrar servidores Apache, Nginx, Caddy e ambientes Linux (Ubuntu, Fedora, Arch, Rocky, OpenSUSE). Utilizo Docker para orquestração de ambientes e sou entusiasta de virtualização e infraestrutura eficiente.</p>
 
@@ -8,7 +8,7 @@
 
 # EN
 
-<p>Hello! I'm Samuel Gomes Dourado, passionate about technology, software development, and innovative solutions. I have solid experience in back-end with PHP (Laravel, CakePHP, CodeIgniter, Symfony), database modeling, automation, automated testing, and API integration. On the front end, I work with Blade, Tailwind CSS, Bootstrap, Alpine.js, React, and Vue.js, building modern and responsive interfaces.</p>
+<p>Hello! I'm Samuel, passionate about technology, software development, and innovative solutions. I have solid experience in back-end with PHP (Laravel, CakePHP, CodeIgniter, Symfony), database modeling, automation, automated testing, and API integration. On the front end, I work with Blade, Tailwind CSS, Bootstrap, Alpine.js, React, and Vue.js, building modern and responsive interfaces.</p>
 
 <p>I work with MySQL, PostgreSQL, and MongoDB databases, and manage Apache, Nginx, Caddy servers, and Linux environments (Ubuntu, Fedora, Arch, Rocky, OpenSUSE). I use Docker for environment orchestration and am enthusiastic about virtualization and efficient infrastructure.</p>
 
