@@ -4,17 +4,34 @@ import os
 from lxml import etree
 import time
 import hashlib
+from dateutil import relativedelta
+
+# Tenta carregar variáveis de um arquivo .env local para testes
+if os.path.exists('.env'):
+    with open('.env') as f:
+        for line in f:
+            if '=' in line and not line.startswith('#'):
+                k, v = line.strip().split('=', 1)
+                os.environ[k] = v.strip().strip('"').strip("'")
 
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
 USER_NAME = os.environ['USER_NAME']
-# --- EDIT YOUR INFO HERE ---
+# Your Personal Info
+BIRTH_DATE = "2004-06-27"
+FOCUS = "Full-Stack, Automação & APIs"
 EMAIL = "samueldourado.dev@proton.me"
 LINKEDIN = "samuel-gomes-dourado"
 INSTAGRAM = "@dourado.ti"
-# ---------------------------
+# =================================
+
+# Calcula a idade automaticamente
+birth_dt = datetime.datetime.strptime(BIRTH_DATE, "%Y-%m-%d")
+today = datetime.datetime.now()
+current_age = relativedelta.relativedelta(today, birth_dt).years
+
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -295,6 +312,9 @@ def svg_overwrite(filename, commit_data, star_data, repo_data, contrib_data, fol
     justify_format(root, 'loc_del', loc_data[1], 1)
     
     # Update personal info
+    justify_format(root, 'name_data', "Samuel Gomes Dourado", 23)
+    justify_format(root, 'age_data', f"{current_age} years", 22)
+    justify_format(root, 'focus_data', FOCUS, 23)
     justify_format(root, 'email_data', EMAIL, 22)
     justify_format(root, 'linkedin_data', LINKEDIN, 19)
     justify_format(root, 'instagram_data', INSTAGRAM, 18)
