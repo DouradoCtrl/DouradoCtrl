@@ -296,14 +296,15 @@ def stars_counter(data):
     return total_stars
 
 
-def svg_overwrite(filename, commit_data, commit_data_1year, star_data, repo_data, contrib_data, follower_data, loc_data):
+def svg_overwrite(filename, commit_data, commit_year, commit_data_1year, star_data, repo_data, contrib_data, follower_data, loc_data):
     """
     Parse SVG files and update elements
     """
     tree = etree.parse(filename)
     root = tree.getroot()
     justify_format(root, 'commit_data', commit_data, 16)
-    justify_format(root, 'commit_data_1year', commit_data_1year, 16)
+    justify_format(root, 'commit_year', commit_year, 0)
+    justify_format(root, 'commit_data_1year', commit_data_1year, 11)
     justify_format(root, 'repo_data', repo_data, 4)
     justify_format(root, 'contrib_data', contrib_data)
     justify_format(root, 'loc_data', loc_data[2], 1)
@@ -409,7 +410,7 @@ if __name__ == '__main__':
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index])
 
-    svg_overwrite('dark_mode.svg', commit_data, commit_data_1year, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
-    svg_overwrite('light_mode.svg', commit_data, commit_data_1year, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite('dark_mode.svg', commit_data, str(current_year), commit_data_1year, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite('light_mode.svg', commit_data, str(current_year), commit_data_1year, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
 
     print('Successfully fetched and generated updated SVGs.')
