@@ -30,6 +30,10 @@ def simple_request(func_name, query, variables):
 
 
 def graph_commits(start_date, end_date):
+    """
+    Uses GitHub's GraphQL v4 API to return the total commits.
+    Chunked by 1 year to avoid API limits.
+    """
     query_count('graph_commits')
     query = '''
     query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
@@ -41,9 +45,43 @@ def graph_commits(start_date, end_date):
             }
         }
     }'''
-    variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
-    request = simple_request(graph_commits.__name__, query, variables)
-    return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+    import datetime
+    
+    # Handle dates using standard library tools
+    start_dt = datetime.datetime.strptime(start_date.replace('Z', ''), "%Y-%m-%dT%H:%M:%S")
+    end_dt = datetime.datetime.strptime(end_date.replace('Z', '')[:19], "%Y-%m-%dT%H:%M:%S")
+    
+    total_commits = 0
+    
+    while start_dt < end_dt:
+        chunk_end = start_dt + datetime.timedelta(days=364)
+        if chunk_end > end_dt:
+            chunk_end = end_dt
+            
+        # Format back to ISO8601 string
+        start_str = start_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+        end_str = chunk_end.strftime("%Y-%m-%dT%H:%M:%SZ")
+        
+        variables = {'start_date': start_str, 'end_date': end_str, 'login': USER_NAME}
+        request = simple_request(graph_commits.__name__, query, variables)
+        
+        try:
+            res = request.json()
+            if 'errors' in res:
+               print("GraphQL Error in graph_commits:", res['errors'])
+               if res['data']['user'] is None:
+                   # Se a query falhar totalmente, tenta quebrar o loop ou pular
+                   break
+            
+            commits = res['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions']
+            total_commits += int(commits)
+        except Exception as e:
+            print("Error parsing commit chunk:", e)
+            
+        # Move up 1 second to avoid overlapping days if needed, but the API handles overlap fine
+        start_dt = chunk_end + datetime.timedelta(seconds=1)
+        
+    return total_commits
 
 
 def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
