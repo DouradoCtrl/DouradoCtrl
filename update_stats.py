@@ -330,8 +330,15 @@ def query_count(funct_id):
 if __name__ == '__main__':
     user_data = user_getter(USER_NAME)
     OWNER_ID = user_data[0]
+    acc_date = user_data[1]
+    
+    # Get total contributions from calendar (includes private if authorized)
+    # Using account creation date for start_date
+    commit_data = graph_commits(acc_date, datetime.datetime.now().isoformat())
+    
     total_loc = loc_query(['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
-    commit_data = commit_counter(7)
+    # The loc_query still populates the cache for Lines of Code
+    
     star_data = graph_repos_stars('stars', ['OWNER'])
     repo_data = graph_repos_stars('repos', ['OWNER'])
     contrib_data = graph_repos_stars('repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
