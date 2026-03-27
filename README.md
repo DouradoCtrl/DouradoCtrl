@@ -1,28 +1,18 @@
 # Samuel Gomes Dourado
 
-<p>Oi, sou Samuel Gomes Dourado, um entusiasta de tecnologia de 20 anos e estudante de T.I.</p>
+<p>Olá! Sou Samuel Gomes Dourado, apaixonado por tecnologia, desenvolvimento de software e soluções inovadoras. Tenho experiência sólida em back-end com PHP (Laravel, CakePHP, CodeIgniter, Symfony), modelagem de banco de dados, automação de rotinas, testes automatizados e integração de APIs. No front-end, atuo com Blade, Tailwind CSS, Bootstrap, Alpine.js, React e Vue.js, criando interfaces modernas e responsivas.</p>
 
-<p>Tenho experiência em desenvolvimento back-end com PHP, utilizando frameworks como Laravel para construir aplicações robustas e escaláveis. Minhas habilidades englobam engenharia de software com foco em soluções, modelagem de banco de dados para garantir desempenho e consistência, testes automatizados para assegurar a qualidade do código, além da integração eficiente de tecnologias, como tarefas agendadas com Cron Tab e rotinas otimizadas no Laravel.</p>
+<p>Trabalho com bancos de dados MySQL, PostgreSQL e MongoDB, além de administrar servidores Apache, Nginx, Caddy e ambientes Linux (Ubuntu, Fedora, Arch, Rocky, OpenSUSE). Utilizo Docker para orquestração de ambientes e sou entusiasta de virtualização e infraestrutura eficiente.</p>
 
-<p>Domino programação orientada a objetos, construção de middlewares e boas práticas de desenvolvimento, garantindo código limpo, eficiente e organizado. No front-end, trabalho com Blade, Tailwind CSS, Bootstrap e Alpine.js, criando interfaces modernas, responsivas e intuitivas.</p>
+<p>Busco sempre evoluir, aprender novas tecnologias e contribuir para projetos que impactam positivamente pessoas e negócios. Se procura alguém comprometido, detalhista e apaixonado por tecnologia, vamos conversar!</p>
 
-<p>Minha experiência também abrange bancos de dados MySQL, administração de servidores Apache, sistemas operacionais baseados em Ubuntu e Docker para gerenciamento de ambientes de desenvolvimento. Além disso, atuo com máquinas virtuais (VMs) em servidores, incluindo configuração e manutenção, garantindo infraestrutura confiável e eficiente.</p>
+# EN
 
-<p>Estou sempre em busca de novos desafios e de aprimorar minhas habilidades, integrando APIs e explorando novas tecnologias. Se você procura um desenvolvedor com atenção aos detalhes e comprometido com a excelência técnica, confira meu repositório e vamos transformar ideias em soluções inovadoras juntos!</p>
+<p>Hello! I'm Samuel Gomes Dourado, passionate about technology, software development, and innovative solutions. I have solid experience in back-end with PHP (Laravel, CakePHP, CodeIgniter, Symfony), database modeling, automation, automated testing, and API integration. On the front end, I work with Blade, Tailwind CSS, Bootstrap, Alpine.js, React, and Vue.js, building modern and responsive interfaces.</p>
 
----
+<p>I work with MySQL, PostgreSQL, and MongoDB databases, and manage Apache, Nginx, Caddy servers, and Linux environments (Ubuntu, Fedora, Arch, Rocky, OpenSUSE). I use Docker for environment orchestration and am enthusiastic about virtualization and efficient infrastructure.</p>
 
-# US
-
-<p>Hello, I'm Samuel Gomes Dourado, a 20-year-old technology enthusiast and IT student.</p>
-
-<p>I have experience in back-end development with PHP, using frameworks like Laravel to build robust and scalable applications. My skills encompass software engineering focused on solutions, database modeling to ensure performance and consistency, automated testing to guarantee code quality, and efficient technology integration, such as task scheduling with Cron Tab and optimized Laravel routines.</p>
-
-<p>I excel in object-oriented programming, middleware construction, and development best practices, ensuring clean, efficient, and well-organized code. On the front end, I work with Blade, Tailwind CSS, Bootstrap, and Alpine.js, creating modern, responsive, and intuitive interfaces.</p>
-
-<p>My expertise also includes MySQL databases, Apache server administration, Ubuntu-based systems, and Docker for managing development environments. Additionally, I work with virtual machines (VMs) on servers, handling configuration and maintenance, ensuring reliable and efficient infrastructure.</p>
-
-<p>I am always looking for new challenges and to improve my skills by integrating APIs and exploring new technologies. If you are looking for a developer with attention to detail and commitment to technical excellence, check out my repository, and let's turn ideas into innovative solutions together!</p>
+<p>I'm always looking to evolve, learn new technologies, and contribute to projects that positively impact people and businesses. If you are looking for someone committed, detail-oriented, and passionate about technology, let's talk!</p>
 
 <div style="display: inline-block;"><br>
   <a href=""><img align="center" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
@@ -32,38 +22,68 @@
 
 ---
 
-<!-- GitHub Profile Trophy Widget (Dark Mode) -->
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=DouradoCtrl&theme=darkhub&no-frame=true&margin-w=10&margin-h=15" alt="GitHub Profile Trophy" />
-  </a>
-</p>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=DouradoCtrl&theme=tokyonight" alt="mystreak"/>
 
 ---
 
-## Academic study
+## Stacks
 
 <div style="display: inline-block;"><br>
-  <a href=""><img align="center" src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"></a>
+  <!-- PHP -->
+  <img align="center" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <!-- Laravel -->
+  <img align="center" src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <!-- CakePHP -->
+  <img align="center" src="https://img.shields.io/badge/CakePHP-D33C43?style=for-the-badge&logo=cakephp&logoColor=white" alt="CakePHP" />
+  <!-- CodeIgniter -->
+  <img align="center" src="https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white" alt="CodeIgniter" />
+  <!-- Symfony -->
+  <img align="center" src="https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white" alt="Symfony" />
+  <!-- Python -->
+  <img align="center" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <!-- React -->
+  <img align="center" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <!-- Vue.js -->
+  <img align="center" src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" alt="Vue.js" />
+  <!-- Next.js -->
+  <img align="center" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
 </div>
 
----
-
-## Personal study
+## Banco de Dados
 
 <div style="display: inline-block;"><br>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08De"></a>
-  <a href=""><img align="center" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"></a>
+  <!-- MySQL -->
+  <img align="center" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <!-- PostgreSQL -->
+  <img align="center" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <!-- MongoDB -->
+  <img align="center" src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+</div>
+
+## Linux
+
+<div style="display: inline-block;"><br>
+  <!-- Docker -->
+  <img align="center" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <!-- Ubuntu -->
+  <img align="center" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" />
+  <!-- Fedora -->
+  <img align="center" src="https://img.shields.io/badge/Fedora-51A2DA?style=for-the-badge&logo=fedora&logoColor=white" alt="Fedora" />
+  <!-- Arch Linux -->
+  <img align="center" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux" />
+  <!-- Rocky Linux -->
+  <img align="center" src="https://img.shields.io/badge/Rocky_Linux-10B981?style=for-the-badge&logo=rockylinux&logoColor=white" alt="Rocky Linux" />
+  <!-- OpenSUSE -->
+  <img align="center" src="https://img.shields.io/badge/openSUSE-73BA25?style=for-the-badge&logo=opensuse&logoColor=white" alt="OpenSUSE" />
+</div>
+
+## Servidores
+
+<div style="display: inline-block;"><br>
+  <!-- Nginx -->
+  <img align="center" src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+  <!-- Apache -->
+  <img align="center" src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white" alt="Apache" />
+  <!-- Caddy -->
+  <img align="center" src="https://img.shields.io/badge/Caddy-00C7B7?style=for-the-badge&logo=caddy&logoColor=white" alt="Caddy" />
 </div>
