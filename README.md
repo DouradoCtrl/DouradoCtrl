@@ -32,10 +32,12 @@
 
 ---
 
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DouradoCtrl&show_icons=true&theme=transparent)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DouradoCtrl&layout=compact&theme=transparent)
-
+<!-- GitHub Profile Trophy Widget (Dark Mode) -->
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=DouradoCtrl&theme=darkhub&no-frame=true&margin-w=10&margin-h=15" alt="GitHub Profile Trophy" />
+  </a>
+</p>
 
 ---
 
