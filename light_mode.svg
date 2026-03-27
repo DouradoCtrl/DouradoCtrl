@@ -35,9 +35,9 @@ text, tspan {white-space: pre;}
 </text>
 <text x="390" y="50" fill="#24292f">
 <tspan x="390" y="50">dourado@ctrl</tspan> ————————————————————————————————————————————————
-<tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Name</tspan>:<tspan class="cc" id="name_dots"> ................................ </tspan><tspan class="value" id="name_data">Samuel Gomes Dourado</tspan>
-<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">Age</tspan>:<tspan class="cc" id="age_dots"> ............................................. </tspan><tspan class="value" id="age_data">21 years</tspan>
-<tspan x="390" y="110" class="cc">. </tspan><tspan class="key">Focus</tspan>:<tspan class="cc" id="focus_dots"> ....................... </tspan><tspan class="value" id="focus_data">Full-Stack, Automação &amp; APIs</tspan>
+<tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Nome:</tspan>:<tspan class="cc" id="name_dots"> ............................... </tspan><tspan class="value" id="name_data">Samuel Gomes Dourado</tspan>
+<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">Idade</tspan>:<tspan class="cc" id="age_dots"> ........................................... </tspan><tspan class="value" id="age_data">21 years</tspan>
+<tspan x="390" y="110" class="cc">. </tspan><tspan class="key">Foco</tspan>:<tspan class="cc" id="focus_dots"> ........................ </tspan><tspan class="value" id="focus_data">Full-Stack, Automação &amp; APIs</tspan>
 <tspan x="390" y="130" class="cc">. </tspan>
 <tspan x="390" y="150">- Skills</tspan> ————————————————————————————————————————————————————
 <tspan x="390" y="170" class="cc">. </tspan><tspan class="key">Backend</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">PHP (Laravel, Symfony, CakePHP), Python</tspan>
