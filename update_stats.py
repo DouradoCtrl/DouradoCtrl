@@ -101,7 +101,9 @@ def graph_commits(start_date, end_date):
     return total_commits
 
 
-def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
+def graph_repos_stars(count_type, owner_affiliation, cursor=None, edges=None):
+    if edges is None:
+        edges = []
     query_count('graph_repos_stars')
     query = '''
     query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
@@ -128,10 +130,20 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
     if request.status_code == 200:
+        res = request.json()
+        user_data = res.get('data', {}).get('user') if res.get('data') else None
+        if not user_data or 'repositories' not in user_data:
+            return 0
+        repos = user_data['repositories']
         if count_type == 'repos':
-            return request.json()['data']['user']['repositories']['totalCount']
+            return repos.get('totalCount', 0)
         elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+            current_edges = repos.get('edges') or []
+            edges.extend(current_edges)
+            if repos.get('pageInfo', {}).get('hasNextPage'):
+                return graph_repos_stars(count_type, owner_affiliation, repos['pageInfo']['endCursor'], edges)
+            return stars_counter(edges)
+    return 0
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -181,13 +193,16 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
 
 
 def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
-    for node in history['edges']:
-        if node['node']['author']['user'] == OWNER_ID:
-            my_commits += 1
-            addition_total += node['node']['additions']
-            deletion_total += node['node']['deletions']
+    if history and history.get('edges'):
+        for node in history['edges']:
+            if node and node.get('node'):
+                author = node['node'].get('author')
+                if author and isinstance(author, dict) and author.get('user') == OWNER_ID:
+                    my_commits += 1
+                    addition_total += node['node'].get('additions', 0)
+                    deletion_total += node['node'].get('deletions', 0)
 
-    if history['edges'] == [] or not history['pageInfo']['hasNextPage']:
+    if not history or not history.get('edges') or not history.get('pageInfo', {}).get('hasNextPage'):
         return addition_total, deletion_total, my_commits
     else: return recursive_loc(owner, repo_name, data, cache_comment, addition_total, deletion_total, my_commits, history['pageInfo']['endCursor'])
 
@@ -292,7 +307,15 @@ def force_close_file(data, cache_comment):
 
 def stars_counter(data):
     total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
+    if not data:
+        return 0
+    for node in data:
+        if node and isinstance(node, dict):
+            inner_node = node.get('node')
+            if inner_node and isinstance(inner_node, dict):
+                stargazers = inner_node.get('stargazers')
+                if stargazers and isinstance(stargazers, dict):
+                    total_stars += stargazers.get('totalCount', 0)
     return total_stars
 
 
