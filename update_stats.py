@@ -21,7 +21,7 @@ HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
 USER_NAME = os.environ['USER_NAME']
 # Your Personal Info
 BIRTH_DATE = "2004-06-27"
-FOCUS = "Full-Stack, Automação & APIs"
+FOCUS = "Full-Stack, Automação, APIs &amp; DevSecOps"
 EMAIL = "samueldourado.dev@proton.me"
 LINKEDIN = "samuel-gomes-dourado"
 INSTAGRAM = "@dourado.ti"
