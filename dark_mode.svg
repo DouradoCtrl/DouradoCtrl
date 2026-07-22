@@ -42,10 +42,10 @@ text, tspan {white-space: pre;}
 <tspan x="390" y="110" class="cc">. </tspan><tspan class="key">Foco</tspan>:<tspan class="cc" id="focus_dots"> ........................ </tspan><tspan class="value" id="focus_data">Full-Stack, Automação &amp; APIs</tspan>
 <tspan x="390" y="130" class="cc">. </tspan>
 <tspan x="390" y="150">- Skills</tspan> ————————————————————————————————————————————————————
-<tspan x="390" y="170" class="cc">. </tspan><tspan class="key">Backend</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">PHP (Laravelm, Code Igniter), Java (SpringBoot)</tspan>
-<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">Frontend</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">React, Vue.js, Next, Angular</tspan>
+<tspan x="390" y="170" class="cc">. </tspan><tspan class="key">Backend</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">PHP (Laravel, Code Igniter), Java (SpringBoot)</tspan>
+<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">Frontend</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">React, Vue.js, Next, Angular</tspan>
 <tspan x="390" y="210" class="cc">. </tspan><tspan class="key">Database</tspan>:<tspan class="cc"> ...................... </tspan><tspan class="value">MySQL, PostgreSQL, MongoDB</tspan>
-<tspan x="390" y="230" class="cc">. </tspan><tspan class="key">DevOps</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">Linux, Nginx, Caddy, Traefik, Docker</tspan>
+<tspan x="390" y="230" class="cc">. </tspan><tspan class="key">DevOps</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">Linux, Nginx, Caddy, Traefik, Docker</tspan>
 <tspan x="390" y="250" class="cc">. </tspan>
 <tspan x="390" y="270">- Contact</tspan> ———————————————————————————————————————————————————
 <tspan x="390" y="290" class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc" id="email_dots"> ........................ </tspan><tspan class="value" id="email_data">samueldourado.dev@proton.me</tspan>
